@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cade Gordon Portfolio</title>
+        <script src="gordon_script.js"></script>
+		<style>
+			
+			@font-face {
+				font-family: 'Circular';
+				src: url(gordon_fonts/CircularStd-Medium.otf);
+			}
+			@font-face {
+				font-family: 'Circular Black';
+				src: url(gordon_fonts/CircularStd-Black.otf);
+			}
+			@font-face {
+				font-family: 'Circular Bold';
+				src: url(gordon_fonts/CircularStd-Bold.otf);
+			}
+			@font-face {
+				font-family: 'Circular Book';
+				src: url(gordon_fonts/CircularStd-Book.otf);
+			}
+			
+			* {
+				margin: 0;
+				font-family: sans-serif;
+			}
+			
+			body, html {
+				margin: 0;
+				height: 100%;
+				padding: 0;
+			}
+			#background {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				z-index: 0;
+				background-image: url(https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff47a951e987a1be1a4f6e836317a3b&auto=format&fit=crop&w=1950&q=80);
+				background-size: cover;
+				transition: background-image 0.6s ease-in;
+				background-repeat: no-repeat;
+				padding: 0;
+				margin: 0;
+			}
+			#content {
+				height: 100%;
+				padding: none;
+			}
+			/*Gradient that may shift to a svg*/
+			
+			/*Text block CSS*/
+			#text {
+				color: white;
+				mix-blend-mode: screen;
+				width: 100%;
+				height: 100%;
+			}
+			h4 {
+				font-family: 'Circular';
+				padding: 20px 100px;
+				font-size: 30px;
+			}
+			h3 {
+				font-family: 'Circular Bold';
+				color: #698CFD;
+				letter-spacing: 1px;
+				font-size: 50px;
+			}
+			h1 {
+				font-family: 'Circular Black';
+				letter-spacing: 1.5px;
+				font-size: 96px;
+			}
+			#options {
+				display: block;
+				position: absolute;
+				bottom: 0;
+			}
+			#options p {
+				float: left;
+				margin: 40px;
+				font-family: 'Circular Book';
+				font-size: 22px;
+				border-bottom: 2px solid #698CFD;
+			}
+			#options p:nth-child(1) {
+				margin-left: 100px;
+			}
+			#blockText {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				margin-left: 100px;
+			}
+			a {
+				font-family: 'Circular Book';
+				font-size: 22px;
+				color: white;
+				text-decoration: none;
+				mix-blend-mode: screen;
+			}
+			#lastProj:hover, #nextProj:hover {
+				cursor: pointer;
+			}
+			/*iPhone pixel breaks*/
+			@media only screen and (max-width: 800px) {
+				h4 {
+					font-size: 16px;
+				}
+				h3 {
+					font-size: 24px;
+				}
+				h1 {
+					font-size: 36px;
+				}
+				#options p {
+					font-size:  14px;
+					margin: 16px;
+				}
+				#options p:nth-child(1) {
+					margin-left: 40px;
+				}
+				#blockText {
+					margin: 40px;
+				}
+				h4 {
+					padding: 20px 40px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="content">
+			<div id="background"></div>
+			<div id="text">
+				<h4>cade gordon</h4>
+				<div id="blockText">
+					<h3>works</h3>
+					<h1 id="headerText">my<br/>portfolio</h1>
+				</div>
+				<div id="options">
+					<p id="lastProj">previous<br/>project</p>
+					<p><a id="projectLink" target="_blank">go to<br/>this work</a></p>
+					<p id="nextProj">next<br/>project</p>
+				</div>
+			</div>
+		</div>
+		<div id="preload"></div>
+	</body>
+</html>

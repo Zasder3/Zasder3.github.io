@@ -1,0 +1,18 @@
+/* CSS Document */
+
+@font-face {
+	font-family: 'Circular';
+	src: url(CircularStd-Medium.otf);
+}
+@font-face {
+	font-family: 'Circular Black';
+	src: url(CircularStd-Black.otf);
+}
+@font-face {
+	font-family: 'Circular Bold';
+	src: url(CircularStd-Bold.otf);
+}
+@font-face {
+	font-family: 'Circular Book';
+	src: url(CircularStd-Book.otf);
+}

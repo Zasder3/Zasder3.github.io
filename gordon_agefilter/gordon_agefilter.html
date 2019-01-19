@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gpa Calculator</title>
+        <link rel="stylesheet" type="text/css" href="fonts/font_import.css">
+        <style>
+			* {
+				font-family: 'Circular';
+			}
+			#body {
+				height: 100%;
+				display: grid;
+				grid-template-columns: 1fr 364px 1fr;
+				grid-template-rows: 1fr 737px 1fr;
+			}
+			button {
+				display: block;
+				margin: 0 auto;
+				border: none;
+				border-radius: 28px;
+				background: linear-gradient(to right top, blue, purple);
+				color: white;
+				font-size: 18px;
+				margin-top: 300px;
+				padding: 8px 12px;
+				box-shadow: 0px 2px 20px 1px rgba(0,0,0,.5);
+			}
+			#result {
+				line-height: 100%;
+				font-size:36px;
+				text-align: center;
+			}
+			#wrapper {
+				margin: auto;
+				display: block;
+				width: 364px;
+				height: 727px;
+				border-radius: 15px;
+				background: url(701f0dcbfe5859b3aef99c47b2896754.png);
+			}
+			#songs {
+				padding-top: 70px;
+				margin: 0 auto;
+				width: 250px;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-column-gap: 50px;
+				grid-row-gap: 50px;
+				
+			}
+			#songs img {
+				width: 100px;
+				box-shadow: 0px 2px 10px 2px rgba(0,0,0, 0.5);
+			}
+
+		</style>
+        
+    </head>
+    
+    <body>
+        <div id="body">
+        <div id="wrapper">
+           	<div id="songs">
+           		<img src="scaryp-autobahn.jpg" alt="img">
+           		<img src="scaryp-autobahn.jpg" alt="img">
+           		<img src="scaryp-autobahn.jpg" alt="img">
+           		<img src="scaryp-autobahn.jpg" alt="img">
+           	</div>
+            <button onClick="setToGPA()">Calculate</button>
+        </div></div>
+    </body>
+    <script type="text/javascript">
+        	function doEverything() {
+				var answer = prompt("How old are you");
+				answer = parseInt(answer);
+				switch(answer) {
+					case answer >= 17:
+						alert("");
+						break;
+					case answer >= 13:
+						alert("");
+						break;
+					case answer >= 5:
+						alert("You can listen to 2 songs");
+						break;
+					case answer 
+				}
+			}
+    </script>
+</html>

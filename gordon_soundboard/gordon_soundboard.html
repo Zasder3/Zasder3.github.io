@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Soundboard</title>
+        <link type="text/css" rel="stylesheet" href="gordon_style.css">
+        <script>
+			function playSound() {
+				sound = prompt("Which artist would you like to listen to (case sensitive): \nDean 1 \nBeenzino \nDean 2 \nJay Park \nSik-K \nZico \n You can type 'Stop' to stop playing");
+					switch(sound) {
+						case "Dean 1":
+							sound = 'gordon_sounds/dean1.mp3';
+							break;
+						case "Beenzino":
+							sound = 'gordon_sounds/beenzino.mp3';
+							break;
+						case "Dean 2":
+							sound = 'gordon_sounds/dean2.mp3';
+							break;
+						case "Jay Park":
+							sound = 'gordon_sounds/jay.mp3';
+							break;
+						case "Sik-K":
+							sound = 'gordon_sounds/sik.mp3';
+							break;
+						case "Zico":
+							sound = 'gordon_sounds/zico.mp3';
+							break;
+						case "Stop":
+							sound = "";
+							break;
+						case "'Stop'":
+							sound = "";
+				}
+				document.getElementById("player").innerHTML="<embed src='" + sound + "' hidden='true' autostart='true' loop='false' />";
+			}
+		</script>
+    </head>
+    
+    <body>
+    	<div id="wrapper">
+        	<img class="shadow" id="Dean1" alt="Dean" src="gordon_photos/dean-press-photo-1.jpg" onClick="playSound();">
+            <img class="shadow" id="Beenzino" alt="Beenzino" src="gordon_photos/beenzino_1469808865_af_org.jpg" onClick="playSound()">
+            <img src="gordon_photos/dean.png" alt="photo" class="shadow" onClick="playSound()">
+            <img src="gordon_photos/jaypark.jpg" alt="photo" class="shadow" onClick="playSound()">
+            <img src="gordon_photos/sik-k-fly-e1495959098988.jpg" alt="photo" class="shadow" onClick="playSound()">
+            <img src="gordon_photos/Zico3crop.jpg" alt="photo" class="shadow" onClick="playSound()"> 
+  
+        </div>
+        <div id="player"></div>
+    </body>
+</html>

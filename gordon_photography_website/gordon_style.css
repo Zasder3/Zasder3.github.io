@@ -1,0 +1,123 @@
+/* CSS Document */
+
+@font-face {
+	font-family: 'Circular';
+	src: url(gordon_fonts/CircularStd-Medium.otf);
+}
+@font-face {
+	font-family: 'Circular Black';
+	src: url(gordon_fonts/CircularStd-Black.otf);
+}
+@font-face {
+	font-family: 'Circular Bold';
+	src: url(gordon_fonts/CircularStd-Bold.otf);
+}
+@font-face {
+	font-family: 'Circular Book';
+	src: url(gordon_fonts/CircularStd-Book.otf);
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+
+#top {
+	background: url(images/Zico3.jpg);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#content-gallery {
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#imlrSpan {
+	position: relative;
+	text-shadow: 0.5vw 0.5vw 0 #C6332E;
+}
+
+#homeHeader{
+	position: absolute;
+	color: white;
+	margin: 0;
+	font-family: 'Circular Bold';
+	font-size: 15vw;
+	line-height: 100vh;
+}
+
+ul {
+	margin: 0;
+	font-size: 2vw;
+	display: block;
+	font-family: 'Circular Book';
+}
+ul li {
+	padding-top: 30px;
+	padding-right: 20px;
+	float: right;
+	list-style-type: none;
+}
+ul a li{
+	color: white;
+}
+
+.imagecontainer {
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#content-gallery {
+	position: relative;
+}
+.imagecontainer {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.imagecontainer img {
+	width: 16vw;
+	box-shadow: 0.5vw 0.5vw 0 #4DB4E7;
+	margin: 2vh 0;
+}
+#content-gallery #send:hover {
+	color: blue;
+}
+#content-gallery #send {
+	transition: 0.3s;
+}
+#content-gallery ul{
+	display: inline inline-block;
+}
+#content-gallery ul a li{
+	color: black !important;
+}
+#nav {
+	position: absolute;
+	width: 100%;
+	display: block;
+}
+
+#contactBox {
+	display: block;
+	width: 100%;
+	
+}
+#contactBox text-area {
+	width: 50vw;
+}
+#colorBar {
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	margin-top: 16vh;
+	width: 70vw;
+	height: 4px;
+	background-color: #4DB4E7;
+}

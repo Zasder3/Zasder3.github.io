@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gpa Calculator</title>
+        <link rel="stylesheet" type="text/css" href="fonts/font_import.css">
+        <style>
+			* {
+				font-family: 'Circular';
+			}
+			button {
+				display: block;
+				margin: 0 auto;
+				border: none;
+				border-radius: 28px;
+				background: linear-gradient(to right top, blue, purple);
+				color: white;
+				font-size: 18px;
+				margin-top: 400px;
+				padding: 8px 12px;
+				box-shadow: 0px 2px 20px 1px rgba(0,0,0,.5);
+			}
+			#selectionWrapper {
+				width: 200px;
+				margin: 0px auto;
+				padding-top: 80px;
+			}
+			select{
+				margin: 6px;
+			}
+			#result {
+				line-height: 100%;
+				font-size:36px;
+				text-align: center;
+			}
+			#wrapper {
+				top: 50%;
+				transform: translateY(30%);
+				display: block;
+				margin: 0 auto;
+				width: 364px;
+				height: 727px;
+				border-radius: 15px;
+				background: url(701f0dcbfe5859b3aef99c47b2896754.png);
+			}<br>
+
+		</style>
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <div id="selectionWrapper">
+                <select id="option1">
+                    <option>5</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+                </select>
+                <select id="option2">
+                    <option>5</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+                </select>
+                <select id="option3">
+                    <option>5</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+                </select>
+                <select id="option4">
+                    <option>5</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+                </select>
+			</div>
+            <p id="result">Result: </p>
+            <button onClick="setToGPA()">Calculate</button>
+        </div>
+    </body>
+    <script type="text/javascript">
+        	function calculateGrade() {
+				var option1 = document.getElementById("option1").value;
+				var option2 = document.getElementById("option2").value;
+				var option3 = document.getElementById("option3").value;
+				var option4 = document.getElementById("option4").value;
+				return (parseInt(option1) + parseInt(option2) + parseInt(option3) + parseInt(option4))/4;
+			}
+			function setResult(inpt) {
+				document.getElementById("result").innerHTML = "Result: " + inpt;
+			}
+			
+			function setToGPA() {
+				setResult(calculateGrade());
+			}
+    </script>
+</html>
