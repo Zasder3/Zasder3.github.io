@@ -250,6 +250,18 @@ footer {
   text-align: center ;
 }
 
+.date{
+  font-weight: bold;
+  background-color: green;
+  color: white;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.date p {
+  padding: 0px;
+}
+
 .has-docked-nav .navbar {
   position: static;
 }
