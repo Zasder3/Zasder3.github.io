@@ -77,7 +77,7 @@
               height="280"
             ></canvas>
       
-            <div class="button" id="clear-button" style="margin-left: 0 auto;">CLEAR</div>
+            <div class="button" id="clear-button">CLEAR</div>
       
             <div class="predictions">
               <div class="prediction-col" id="prediction-0">
@@ -156,12 +156,47 @@
 
         <h5>How about art?</h5>
 
+        <p>Neural style transfer is not exactly that easy on a web browser. Speaking on behalf of your best interest, we won't have your computer do it. Instead, we can have mine do it!
+            See <strong>figure 1</strong> a more rigorous explanation.
+        </p>
+
         <div class="container">
           <img src="images/fire.png" alt="closely studying the flaming computer that tried to run my code" class="figimg">
           <div id="fig1">
             <p>Figure 1: Me trying to figure out why the computer is on fire.</p>
           </div>
         </div>
+
+        <p>To make your life easier, and to preserve your computer, you can simply send the photos to me and I will email you back with the results.</p>
+
+        <form action="https://mailthis.to/cadegordonapplies" method="POST" encType="multipart/form-data">
+            <div class="six columns">
+                <label>
+                Email:
+                <input type="text" name="_replyto">
+                </label>
+            </div>
+            <div class="six columns">
+                <label>
+                    Name:
+                    <input type="text" name="name">
+                </label>
+            </div>
+            <div class="twelve columns">
+                <label>
+                    Message: <br>
+                    <textarea name="message"></textarea>
+                </label>
+            </div>
+            <div class="twelve columns">
+                <label style="text-align: center;"> Image:
+                    <input type="file" name="file">
+                </label>
+            </div>
+            <div class="twelve columns">
+                <input type="submit" style="width: 100%; margin-bottom: 10%;" value="Submit">
+            </div>
+        </form>
 
         <!-- Scripts-->
         <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>

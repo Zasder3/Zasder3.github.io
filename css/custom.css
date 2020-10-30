@@ -271,3 +271,7 @@ footer {
       position: fixed;
   }
 }
+
+textarea {
+  width: 100%;
+}

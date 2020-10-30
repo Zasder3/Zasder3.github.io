@@ -1,7 +1,12 @@
 #predBox {
   margin: 0 auto;
   display: block;
-  width: 100px;
+  width: 150px;
+}
+
+#clear-button {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .canvas {
