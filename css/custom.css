@@ -224,7 +224,14 @@
     border-bottom-color: #33C3F0; }
 }
 /* Other */
+
+/* @font-face {
+  font-family: 'Deep Mind Serif';
+  src: url(../fonts/DeepMindSerifText-Regular.ttf);
+} */
+
 h3 {
+  /* font-family: 'Deep Mind Serif'; */
   font-weight: bold;
   color: #2942DF;
 }
