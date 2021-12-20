@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Cade Gordon | AICA</title>
+  <meta name="description" content="">
+  <meta name="author" content="Cade Gordon">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon4.png">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C11GWWKPF9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-C11GWWKPF9');
+  </script>
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 15%;">
+        <h3>Cade Gordon</h3>
+          
+        <div class="navbar-spacer"></div>
+        <nav class="navbar">
+          <div class="container">
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a class="navbar-link" href="index.html">Home</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-link" href="play.html">Play</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-link" href="research.html">Research</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-link" href="cv.html">CV</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <h5 style="margin-top: 5%">What is Affective Image Classification?</h5>
+        <p>Given a picture, we predict the emotion felt by a viewer perceiving the image. The problem exists at the intersection of art, psychology, and computer vision. Due to the
+          fact that this paper is still undergoing experimentation, I can not share too many specific details. But I can give some intuitions about the problem and some of our plans.
+        </p>
+        <h5>Example</h5>
+        <p>For a minute, look at the following image and think to yourself, "what emotion am I feeling?"</p>
+        <div class="container">
+          <img src="images/fear.png" alt="an image so scary it can't be seen by mortals" class="figimg">
+          <div id="fig1">
+            <p>Figure 1: Most likely the scariest image to ever grace your life thus far</p>
+          </div>
+        </div>
+        <p>Don't worry it's just a drawing. We would give a picture like this to our computer model, then it would predict what a viewer like you or I would feel. If it does
+          it's job well, it would predict fear. Maybe the picture was of a scenic mountain, in that case the model would predict something like contentment.
+        </p>
+        <h5>So what do you do to solve it?</h5>
+        <p>We use convolutional neural networks to give us our baseline model. From there we seek two different methods in order to better predict perceived
+          human emotions: artistic style and language features.
+        </p>
+        <h6>Artistic Style</h6>
+        <p>We propose using a learned method to find artistic style present in photos. After we extract information from the artistic features, we attempt to use those features
+          to make our predictions.
+        </p>
+        <h6>Language Features</h6>
+        <p>We study how parts of language associated with the image cause emotion. Much of our focus is in the natural biases present within language. We hope to
+          make use of that bias to find elements that cause emotion in a viewer.
+        </p>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
