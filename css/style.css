@@ -133,3 +133,109 @@ nav #div-lower .div-right div:nth-child(3) a {
     text-decoration: underline;
     text-underline-offset: 8px;
 }
+
+.card:nth-of-type(3n+1) {
+    background-color: #AE5741;
+}
+
+.card:nth-of-type(3n+2) {
+    background-color: #B12525;
+}
+
+.card:nth-of-type(3n) {
+    background-color: #363B8F;
+}
+
+.card {
+    margin: 36px min(14%, 200px) 36px min(14%, 200px);
+    color: white;
+    width: calc(100% - 2 * min(14%, 200px) - 2 * 48px);
+    padding: 48px 48px 24px 48px;
+}
+
+.card .rule {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.card .type-container{
+    width: 256px;
+    height: 36px;
+    border: 1px solid white;
+    font-family: 'GT American Mono Light', sans-serif;
+}
+
+.card .type-container .left {
+    float: left;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    
+}
+
+.card:nth-of-type(3n+1) .type-container .left {
+    color: #AE5741;
+}
+
+.card:nth-of-type(3n+2) .type-container .left {
+    color: #B12525;
+}
+
+.card:nth-of-type(3n) .type-container .left {
+    color: #363B8F;
+}
+
+.card .type-container .right {
+    float: right;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .text-container {
+    width: 100%;
+    /* make it contain a left and right that take up 70/30 respectively */
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.card .text-container .left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    /* align text to bottom left */
+    justify-content: flex-end;
+}
+
+.card .text-container .right {
+    width: 30%;
+    /* float text to bottom and right */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.card .text-container .right a {
+    font-family: 'GT American Mono Bold', sans-serif;
+    margin-right: 32px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.card .footnote {
+    font-family: 'GT American Mono Light', sans-serif;
+}
+
+.card .footnote span {
+    font-family: 'GT American Mono Bold', sans-serif;
+}
