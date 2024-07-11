@@ -1,50 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
     <title>Cade Gordon</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="icon" type="image/x-icon" href="/cg.ico">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=DM+Sans&family=DM+Serif+Display&family=DM+Serif+Text&display=swap"
-        rel="stylesheet">
-    <style>
-        #content {
-            margin-left: 32px;
-            font-family: 'Courier New', Courier, monospace;
-            max-width: 600px;
-        }
-    </style>
-
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="content">
-        <p>Cade Gordon</p>
-        <p>I use machine learnine to enable people to live happier healthier lives.</p>
-        <p>What I'm Up To</p>
-        <ul>
-            <li>Making antibodies safer at <a href="https://www.bighatbio.com/">BigHat Biosciences</a></li>
-            <li><a href="https://arxiv.org/abs/2210.08402">Laion-5B</a>, the largest open-source image-text dataset and
-                available CLIP models, NeurIPS 2022
-                Outstanding Paper</li>
-            <li><a href="https://arxiv.org/abs/2212.07143">Reproducible scaling laws for contrastive language-image
-                    learning</a>, CVPR 2023</li>
-            <li><a href="">Latent Neural Differential Equations for Video Generation</a>, NeurIPS 2020 Workshop Paper
-            </li>
-            <li>I've also been fortunate enough to spend time at <a href="https://cohere.com/">Cohere</a> studying
-                contrastive learning in NLP</li>
-        </ul>
-        <p>Contact</p>
-        <p>If you're buidling something cool I'd love to chat!</p>
-        <ul>
-            <li>Email: cadegord [at] berkeley [dot] edu</li>
-            <li>Twitter: <a href="https://twitter.com/CadeGordonML">@CadeGordonML</a></li>
-            <li>Github: <a href="https://github.com/Zasder3">@Zasder3</a></li>
-        </ul>
+    <nav>
+        <div id="div-upper">
+            <img src="images/logo.png" alt="logo">
+            <a href="index.html">Cade</br>Gordon</a>
+        </div>
+        <div id="div-lower">
+            <div class="div-left">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="div-right">
+                <div>
+                    <a href="https://scholar.google.com/citations?user=yma-bZUAAAAJ&hl=en&oi=ao">Scholar</a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/CadeGordonML">Twitter</a>
+                </div>
+                <div id="writings">
+                    <a href="#">Writings</a>
+                </div>
+            </div>
+    </nav>
+    <div id="splash-image">
+        <img src="images/splash-image.png" alt="splash-image">
+    </div>
+    <div id="bio">
+        <div id="bio-upper">
+            <p>Biography</p>
+        </div>
+        <div id="bio-lower">
+            <p>I'm a masters student in Pieter Abbeel's lab at UC Berkeley interpreting protein language models for
+                directed evolution. I've been fortunate enough to have spent time at <a>Future House</a>, <a>BigHat
+                    Biosciences</a>, and <a>Cohere</a>.</p>
+        </div>
+    </div>
+    <div id="work">
+        <h1>Past Work</h1>
+        <div class="card">
+            <div class="type-container">
+                <div class="left">Paper</div>
+                <div class="right">2024</div>
+            </div>
+            <h1>Generative Humanization for Therapeutic Antibodies</h1>
+            <hr>
+            <div class="text-container">
+                <div class="left">
+                    <p>Antibody therapies have been employed to address some of today's most challenging diseases, but
+                        must meet many criteria during drug development before reaching a patient. Humanization is a
+                        sequence optimization strategy that addresses one critical risk called immunogenicity - a
+                        patient's immune response to the drug - by making an antibody more `human-like' in the absence
+                        of a predictive lab-based test for immunogenicity. However, existing humanization strategies
+                        generally yield very few humanized candidates, which may have degraded biophysical properties or
+                        decreased drug efficacy. Here, we re-frame humanization as a conditional generative modeling
+                        task, where humanizing mutations are sampled from a language model trained on human antibody
+                        data. We describe a sampling process that incorporates models of therapeutic attributes, such as
+                        antigen binding affinity, to obtain candidate sequences that have both reduced immunogenicity
+                        risk and maintained or improved therapeutic properties, allowing this algorithm to be readily
+                        embedded into an iterative antibody optimization campaign. We demonstrate in silico and in lab
+                        validation that in real therapeutic programs our generative humanization method produces diverse
+                        sets of antibodies that are both (1) highly-human and (2) have favorable therapeutic properties,
+                        such as improved binding to target antigens.</p>
+                </div>
+                <div class="right">
+                    <a>Read more →</a>
+                </div>
+            </div>
+            <hr>
+            <div class="footnote">
+                <p>Published at <span>ICLR 2024, GEMBio Workshop</span></p>
+            </div>
+        </div>
     </div>
 </body>
 

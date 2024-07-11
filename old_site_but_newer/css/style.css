@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+}
+
+#image-box {
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'DM sans';
+    font-size: 4em;
+}

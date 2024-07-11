@@ -1,14 +1,135 @@
-* {
+/* add fonts */
+@font-face {
+    font-family: 'GT American Mono Bold';
+    src: url('../fonts/GT-America-Mono-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'GT American Mono Light';
+    src: url('../fonts/GT-America-Mono-Light.ttf');
+}
+
+body {
+    background-color: #FFF5E9;
+    font-family: 'Nanum Myeongjo', serif;
     margin: 0;
 }
 
-#image-box {
-    margin: 0 auto;
-    height: 100vh;
-    width: 100vw;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    font-family: 'DM sans';
-    font-size: 4em;
+nav {
+    width: 100%;
+}
+
+nav #div-upper {
+    font-family: 'GT American Mono Light', sans-serif;
+    height: 96px;
+    font-size: 24px;
+    border-bottom: 1px solid black;
+}
+
+nav #div-upper img {
+    float: left;
+    /* align to center */
+    margin-top: 16px;
+    margin-left: 24px;
+}
+
+nav #div-upper a {
+    float: left;
+    color: black;
+    margin-top: 20px;
+    margin-left: 16px;
+    text-decoration: none;
+}
+
+nav #div-lower {
+    height: 32px;
+    font-size: 16px;
+    border-bottom: 1px solid black;
+    font-family: 'GT American Mono Light', sans-serif;
+}
+
+nav #div-lower .div-left {
+    float: left;
+    margin-left: 32px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav #div-lower .div-left a {
+    color: black;
+    text-decoration: none;
+}
+
+nav #div-lower .div-right {
+    float: right;
+    margin-right: 32px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav #div-lower .div-right div {
+    width: 84px;
+    height: 100%;
+    border-left: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav #div-lower .div-right div a {
+    text-decoration: none;
+    color: black;
+}
+
+nav #div-lower .div-right div:nth-child(3) {
+    background-color: black;
+}
+
+nav #div-lower .div-right div:nth-child(3) a {
+    color: white;
+}
+
+#splash-image {
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+#splash-image img {
+    width: 100%;
+}
+
+#bio #bio-upper {
+    font-size: 16px;
+    height: 32px;
+    font-family: 'GT American Mono Light', sans-serif;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+#bio #bio-upper p {
+    margin-left: min(14%, 200px);
+}
+
+#bio #bio-lower {
+    font-size: 36px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+#bio #bio-lower p {
+    margin: 12px min(14%, 200px);
+}
+
+#bio #bio-lower a {
+    color: #AE5741;
+    text-decoration: none;
+}
+
+#work>h1 {
+    font-size: 36px;
+    margin: 128px min(14%, 200px) 0 min(14%, 200px);
+    text-decoration: underline;
+    text-underline-offset: 8px;
 }
