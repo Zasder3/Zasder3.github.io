@@ -28,7 +28,7 @@
                     <a href="https://twitter.com/CadeGordonML">Twitter</a>
                 </div>
                 <div id="writings">
-                    <a href="#">Writings</a>
+                    <a href="https://cadegordon.substack.com/">Writings</a>
                 </div>
             </div>
     </nav>
@@ -41,7 +41,8 @@
         </div>
         <div id="bio-lower">
             <p>I'm a masters student in Pieter Abbeel's lab at UC Berkeley interpreting protein language models for
-                directed evolution. I've been fortunate enough to have spent time at <a href="https://www.futurehouse.org/">Future House</a>, <a href="https://www.bighatbio.com/">BigHat
+                directed evolution. I've been fortunate enough to have spent time at <a
+                    href="https://www.futurehouse.org/">Future House</a>, <a href="https://www.bighatbio.com/">BigHat
                     Biosciences</a>, and <a href="https://cohere.com/">Cohere</a>.</p>
         </div>
     </div>
@@ -90,7 +91,20 @@
             <div class="rule"></div>
             <div class="text-container">
                 <div class="left">
-                    <p>Scaling up neural networks has led to remarkable performance across a wide range of tasks. Moreover, performance often follows reliable scaling laws as a function of training set size, model size, and compute, which offers valuable guidance as large-scale experiments are becoming increasingly expensive. However, previous work on scaling laws has primarily used private data & models or focused on uni-modal language or vision learning. To address these limitations, we investigate scaling laws for contrastive language-image pretraining (CLIP) with the public LAION dataset and the opensource OpenCLIP repository. Our large-scale experiments involve models trained on up to two billion image-text pairs and identify power law scaling for multiple downstream tasks including zero-shot classification, retrieval, linear probing, and end-to-end fine-tuning. We find that the training distribution plays a key role in scaling laws as the OpenAI and OpenCLIP models exhibit different scaling behavior despite identical model architectures and similar training recipes. We open-source our evaluation workflow and all models, including the largest public CLIP models, to ensure reproducibility and make scaling laws research more accessible.</p>
+                    <p>Scaling up neural networks has led to remarkable performance across a wide range of tasks.
+                        Moreover, performance often follows reliable scaling laws as a function of training set size,
+                        model size, and compute, which offers valuable guidance as large-scale experiments are becoming
+                        increasingly expensive. However, previous work on scaling laws has primarily used private data &
+                        models or focused on uni-modal language or vision learning. To address these limitations, we
+                        investigate scaling laws for contrastive language-image pretraining (CLIP) with the public LAION
+                        dataset and the opensource OpenCLIP repository. Our large-scale experiments involve models
+                        trained on up to two billion image-text pairs and identify power law scaling for multiple
+                        downstream tasks including zero-shot classification, retrieval, linear probing, and end-to-end
+                        fine-tuning. We find that the training distribution plays a key role in scaling laws as the
+                        OpenAI and OpenCLIP models exhibit different scaling behavior despite identical model
+                        architectures and similar training recipes. We open-source our evaluation workflow and all
+                        models, including the largest public CLIP models, to ensure reproducibility and make scaling
+                        laws research more accessible.</p>
                 </div>
                 <div class="right">
                     <a href="https://arxiv.org/abs/2212.07143">Read more →</a>
@@ -110,7 +124,22 @@
             <div class="rule"></div>
             <div class="text-container">
                 <div class="left">
-                    <p>Groundbreaking language-vision architectures like CLIP and DALL-E proved the utility of training on large amounts of noisy image-text data, without relying on expensive accurate labels used in standard vision unimodal supervised learning. The resulting models showed capabilities of strong text-guided image generation and transfer to downstream tasks, while performing remarkably at zero-shot classification with noteworthy out-of-distribution robustness. Since then, large-scale language-vision models like ALIGN, BASIC, GLIDE, Flamingo and Imagen made further improvements. Studying the training and capabilities of such models requires datasets containing billions of image-text pairs. Until now, no datasets of this size have been made openly available for the broader research community. To address this problem and democratize research on large-scale multi-modal models, we present LAION-5B - a dataset consisting of 5.85 billion CLIP-filtered image-text pairs, of which 2.32B contain English language. We show successful replication and fine-tuning of foundational models like CLIP, GLIDE and Stable Diffusion using the dataset, and discuss further experiments enabled with an openly available dataset of this scale. Additionally we provide several nearest neighbor indices, an improved web-interface for dataset exploration and subset generation, and detection scores for watermark, NSFW, and toxic content detection.</p>
+                    <p>Groundbreaking language-vision architectures like CLIP and DALL-E proved the utility of training
+                        on large amounts of noisy image-text data, without relying on expensive accurate labels used in
+                        standard vision unimodal supervised learning. The resulting models showed capabilities of strong
+                        text-guided image generation and transfer to downstream tasks, while performing remarkably at
+                        zero-shot classification with noteworthy out-of-distribution robustness. Since then, large-scale
+                        language-vision models like ALIGN, BASIC, GLIDE, Flamingo and Imagen made further improvements.
+                        Studying the training and capabilities of such models requires datasets containing billions of
+                        image-text pairs. Until now, no datasets of this size have been made openly available for the
+                        broader research community. To address this problem and democratize research on large-scale
+                        multi-modal models, we present LAION-5B - a dataset consisting of 5.85 billion CLIP-filtered
+                        image-text pairs, of which 2.32B contain English language. We show successful replication and
+                        fine-tuning of foundational models like CLIP, GLIDE and Stable Diffusion using the dataset, and
+                        discuss further experiments enabled with an openly available dataset of this scale. Additionally
+                        we provide several nearest neighbor indices, an improved web-interface for dataset exploration
+                        and subset generation, and detection scores for watermark, NSFW, and toxic content detection.
+                    </p>
                 </div>
                 <div class="right">
                     <a href="https://arxiv.org/abs/2210.08402">Read more →</a>
@@ -130,7 +159,17 @@
             <div class="rule"></div>
             <div class="text-container">
                 <div class="left">
-                    <p>Generative Adversarial Networks have recently shown promise for video generation, building off of the success of image generation while also addressing a new challenge: time. Although time was analyzed in some early work, the literature has not adequately grown with temporal modeling developments. We study the effects of Neural Differential Equations to model the temporal dynamics of video generation. The paradigm of Neural Differential Equations presents many theoretical strengths including the first continuous representation of time within video generation. In order to address the effects of Neural Differential Equations, we investigate how changes in temporal models affect generated video quality. Our results give support to the usage of Neural Differential Equations as a simple replacement for older temporal generators. While keeping run times similar and decreasing parameter count, we produce a new state-of-the-art model in 64×64 pixel unconditional video generation, with an Inception Score of 15.20.</p>
+                    <p>Generative Adversarial Networks have recently shown promise for video generation, building off of
+                        the success of image generation while also addressing a new challenge: time. Although time was
+                        analyzed in some early work, the literature has not adequately grown with temporal modeling
+                        developments. We study the effects of Neural Differential Equations to model the temporal
+                        dynamics of video generation. The paradigm of Neural Differential Equations presents many
+                        theoretical strengths including the first continuous representation of time within video
+                        generation. In order to address the effects of Neural Differential Equations, we investigate how
+                        changes in temporal models affect generated video quality. Our results give support to the usage
+                        of Neural Differential Equations as a simple replacement for older temporal generators. While
+                        keeping run times similar and decreasing parameter count, we produce a new state-of-the-art
+                        model in 64×64 pixel unconditional video generation, with an Inception Score of 15.20.</p>
                 </div>
                 <div class="right">
                     <a href="https://arxiv.org/abs/2011.03864">Read more →</a>
